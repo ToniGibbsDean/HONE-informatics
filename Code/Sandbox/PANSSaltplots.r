@@ -2,7 +2,7 @@
 
 library(tidyverse)
 
-        path<-"/Users/tg625/Documents/PDA/Directory/Results"
+        path<-"Figures"
 
         d<-read.csv("/Users/tg625/Documents/PDA/Directory/Data/pannsexp_tgd.csv")
 

@@ -6,7 +6,7 @@ library(lubridate)
 # read in data
 ##################################################################
 dat<-read.csv("Data/data_wide_merged_0806.csv")
-path<-"Figures/"
+path<-"Figures"
 
 dat$new_admission_date <- mdy(dat$new_admission_date)
 
@@ -222,10 +222,10 @@ BMI_overVsUnder<- dat %>%
 #print
 ##################################################################
 
-ggsave(missingDataX6moCat_bar, file=file.path(path,"BMI_missingDataX6moCat_bar"))
-ggsave(mmissingWithTarget_linechart, file=file.path(path,"mmissingWithTarget_linechart"))
-ggsave(avBMIexcludingMissing_linechart, file=file.path(path,"BMI_avBMIexcludingMissing_linechart"))
-ggsave(BMIgender_bar, file=file.path(path,"BMI_rgender_bar"))
-ggsave(BMI_overVsUnder, file=file.path(path,"BMI_overVsUnder"))
-ggsave(pwise_BMI, file=file.path(path,"BMI_pwise_BMI"))
+ggsave(missingDataX6moCat_bar, file=file.path(path,"BMI_missingDataX6moCat_bar.png"))
+ggsave(mmissingWithTarget_linechart, file=file.path(path,"mmissingWithTarget_linechart.png"))
+ggsave(avBMIexcludingMissing_linechart, file=file.path(path,"BMI_avBMIexcludingMissing_linechart.png"))
+ggsave(pyramid_plot, file=file.path(path,"BMI_rgender_pyramid_plot.png"))
+ggsave(BMI_overVsUnder, file=file.path(path,"BMI_overVsUnder.png"))
+ggsave(pwise_BMI, file=file.path(path,"BMI_pwise_BMI.png"))
 
